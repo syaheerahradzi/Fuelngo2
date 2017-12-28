@@ -1,0 +1,218 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    android:focusable="false"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="29dp"
+            android:backgroundTint="@color/cast_expanded_controller_ad_label_background_color"
+            android:hint="Event name"
+            android:inputType="textPersonName"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/btnpicker"
+            android:layout_alignStart="@+id/btnpicker" />
+
+
+        <Button
+            android:id="@+id/btnpicker"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:onClick="goPlacePicker"
+            android:text="Select location"
+            android:layout_marginTop="14dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/etname"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnpicker"
+            android:layout_alignStart="@+id/btnpicker"
+            android:layout_below="@+id/btnpicker"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:background="@color/cast_expanded_controller_ad_label_background_color"
+            android:text="Location name"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvname"
+            android:layout_alignStart="@+id/tvname"
+            android:layout_below="@+id/tvname"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:background="@color/cast_expanded_controller_ad_label_background_color"
+            android:text="Address"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvaddress"
+            android:layout_alignStart="@+id/tvaddress"
+            android:layout_below="@+id/tvaddress"
+            android:layout_marginTop="22dp"
+            android:text="Date:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etstartdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Start date"
+            android:inputType="textPersonName"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="18sp"
+            android:focusable="false"/>
+
+        <EditText
+            android:id="@+id/etenddate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="End date"
+            android:inputType="textPersonName"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:layout_alignTop="@+id/etstartdate"
+            android:layout_toLeftOf="@+id/btnenddate"
+            android:layout_toStartOf="@+id/btnenddate" />
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etstartdate"
+            android:layout_alignStart="@+id/etstartdate"
+            android:layout_below="@+id/etstartdate"
+            android:layout_marginTop="23dp"
+            android:text="Time:"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etstarttime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Start time"
+            android:inputType="textPersonName"
+            android:focusable="false"
+            android:textColor="@color/cardview_dark_background" />
+
+        <EditText
+            android:id="@+id/etendtime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:ems="10"
+            android:hint="End time"
+            android:inputType="textPersonName"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_above="@+id/etdescription"
+            android:layout_alignLeft="@+id/etenddate"
+            android:layout_alignStart="@+id/etenddate" />
+
+        <EditText
+            android:id="@+id/etdescription"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Description of event"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/etstarttime"
+            android:layout_alignRight="@+id/btnenddate"
+            android:layout_alignEnd="@+id/btnenddate" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etdescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:onClick="adddata"
+            android:text="ADD EVENT"
+            android:textColor="@color/cardview_light_background" />
+
+        <ImageButton
+            android:id="@+id/btnstartdate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/etenddate"
+            android:layout_toEndOf="@+id/etstartdate"
+            android:layout_toRightOf="@+id/etstartdate"
+            android:background="@drawable/calendar" />
+
+        <ImageButton
+            android:id="@+id/btnenddate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/calendar"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignTop="@+id/etenddate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/btnstarttime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/time"
+            android:layout_above="@+id/etdescription"
+            android:layout_toRightOf="@+id/etstarttime"
+            android:layout_toEndOf="@+id/etstarttime" />
+
+        <ImageButton
+            android:id="@+id/btnendtime"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/time"
+            android:layout_toRightOf="@+id/etendtime"
+            android:layout_toEndOf="@+id/etendtime"
+            android:layout_alignBottom="@+id/btnstarttime"
+            android:layout_alignTop="@+id/btnstarttime" />
+
+
+    </RelativeLayout>
+</ScrollView>
+

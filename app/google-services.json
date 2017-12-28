@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "840941632939",
+    "firebase_url": "https://fuelngo-2d1ae.firebaseio.com",
+    "project_id": "fuelngo-2d1ae",
+    "storage_bucket": "fuelngo-2d1ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840941632939:android:45916e7ca7e88173",
+        "android_client_info": {
+          "package_name": "com.example.user.fuelngo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840941632939-oq4ubenvoe8u63cigrl5urcr1o66be02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.fuelngo",
+            "certificate_hash": "a7e3ccecf3e7507a2670085aa0c9291169d225d6"
+          }
+        },
+        {
+          "client_id": "840941632939-3oi1epsd8e7k0udftcpik1vvef088h2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.fuelngo",
+            "certificate_hash": "298ed1aef40c8df4c5c3d55e6d65ebf97b019f87"
+          }
+        },
+        {
+          "client_id": "840941632939-lbp0l01lcsp8i70l3tko005ssm6o6d2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiQUp9mBDYyQZv7VBv1qBdI2W9Uv2uJo0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840941632939-lbp0l01lcsp8i70l3tko005ssm6o6d2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

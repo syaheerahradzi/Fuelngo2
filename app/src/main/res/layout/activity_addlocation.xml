@@ -1,0 +1,135 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    android:focusable="false"
+    android:background="@drawable/bg">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/imgbtnpic"
+            android:layout_width="60dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="25dp"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btncapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgbtnpic"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:text="CAPTURE"
+            android:textColor="@color/cardview_light_background" />
+
+        <ImageButton
+            android:id="@+id/imgbtnpicker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/tvaddress"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@android:drawable/ic_menu_mylocation"
+            android:onClick="goPlacePicker"
+           />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/cast_expanded_controller_ad_label_background_color"
+            android:text="Location name"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/btncapture"
+            android:layout_toLeftOf="@+id/imgbtnpicker"
+            android:layout_toStartOf="@+id/imgbtnpicker" />
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/cast_expanded_controller_ad_label_background_color"
+            android:text="Address"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="18sp"
+            android:layout_below="@+id/tvname"
+            android:layout_alignLeft="@+id/tvname"
+            android:layout_alignStart="@+id/tvname" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvaddress"
+            android:layout_below="@+id/tvaddress"
+            android:layout_marginTop="22dp"
+            android:text="On-site services:"
+            android:textColor="@color/cast_expanded_controller_background_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbatm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="18dp"
+            android:text="ATM" />
+
+        <CheckBox
+            android:id="@+id/cbstore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cbprayer"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/cbprayer"
+            android:text="Convenient store" />
+
+        <CheckBox
+            android:id="@+id/cbprayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cbatm"
+            android:layout_below="@+id/cbatm"
+            android:text="Prayer room" />
+
+        <CheckBox
+            android:id="@+id/cbtoilet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cbstore"
+            android:layout_below="@+id/cbstore"
+            android:text="Restroom" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/cbprayer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:text="ADD LOCATION"
+            android:textColor="@color/cardview_light_background" />
+
+    </RelativeLayout>
+
+</ScrollView>

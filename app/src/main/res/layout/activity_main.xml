@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.user.fuelngo.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imgnearby"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/nearby"
+        android:layout_marginRight="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imgsearch"
+        android:layout_toStartOf="@+id/imgsearch" />
+
+    <ImageButton
+        android:id="@+id/imgsearch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:background="@drawable/search"
+        android:layout_alignTop="@+id/imgnearby"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/imgaddevent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/addevent"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imgaddlocation"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/imgaddevent"
+        android:background="@drawable/addplace" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgnearby"
+        android:layout_alignLeft="@+id/imgnearby"
+        android:layout_alignRight="@+id/imgnearby"
+        android:layout_alignStart="@+id/imgnearby"
+        android:layout_below="@+id/imgnearby"
+        android:text="Nearby"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgsearch"
+        android:layout_alignLeft="@+id/imgsearch"
+        android:layout_alignRight="@+id/imgsearch"
+        android:layout_alignStart="@+id/imgsearch"
+        android:layout_below="@+id/imgsearch"
+        android:text="Search"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgaddevent"
+        android:layout_alignRight="@+id/imgaddevent"
+        android:layout_alignEnd="@+id/imgaddevent"
+        android:layout_alignLeft="@+id/imgaddevent"
+        android:layout_alignStart="@+id/imgaddevent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add location info"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_below="@+id/imgaddlocation"
+        android:layout_toRightOf="@+id/imgaddevent"
+        android:layout_toEndOf="@+id/imgaddevent" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fuelngo</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="brand_prompt">Choose your brand</string>
+
+    <string-array name="brand_array">
+        <item> All </item>
+        <item> Petron </item>
+        <item> Shell </item>
+        <item> Petronas </item>
+        <item> BHP </item>
+    </string-array>
+</resources>
